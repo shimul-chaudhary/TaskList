@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="381dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/taskListTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Task Name"
+            android:id="@+id/textView"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/taskListTextView"
+            android:layout_alignLeft="@+id/taskListTextView"
+            android:layout_alignStart="@+id/taskListTextView" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etTaskName"
+            android:layout_alignTop="@+id/textView"
+            android:layout_toRightOf="@+id/taskListTextView"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Notes"
+            android:id="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/etTaskName"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNotes"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignLeft="@+id/etTaskName"
+            android:layout_alignStart="@+id/etTaskName" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:id="@+id/chBoxCompleted"
+            android:layout_below="@+id/etNotes"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginTop="38dp"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hidden"
+            android:id="@+id/chBoxHidden"
+            android:layout_alignBottom="@+id/chBoxCompleted"
+            android:layout_alignRight="@+id/etNotes"
+            android:layout_alignEnd="@+id/etNotes"
+            android:checked="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Add Task"
+            android:id="@+id/btnAddTask"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/chBoxCompleted"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Show Tasks"
+            android:id="@+id/btnShowTasks"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="66dp" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/shimulchaudhary/Desktop/ch13_ex3_TaskList/app/src/main/res/layout/activity_task_list.xml -->
